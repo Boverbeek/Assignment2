@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -24,18 +24,5 @@ public class DataConverter {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-=======
-/**
- * 
- * @author Brennon Overbeek, Sam Hamacher
- * 
- * TODO: make documentation
- *
- */
-public class DataConverter {
-
-	public static void main(String[] args) {
-		
->>>>>>> branch 'master' of https://github.com/Boverbeek/Assignment2.git
 	}
 }
