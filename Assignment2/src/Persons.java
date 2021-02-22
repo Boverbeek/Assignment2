@@ -9,6 +9,7 @@ import java.util.List;
  */
 public class Persons {
 
+<<<<<<< HEAD
 		private String personCode;
 		private String type;
 		private String firstName;
@@ -75,3 +76,14 @@ public class Persons {
 		
 		
 	}
+=======
+		String personCode;
+		String type;
+		String firstName;
+		String lastName;
+		Address address;
+		List <String> emails;
+		
+		
+}
+>>>>>>> branch 'master' of https://github.com/Boverbeek/Assignment2.git
