@@ -1,4 +1,10 @@
-
+/**
+ * 
+ * @author Brennon Overbeek, Sam Hamacher
+ * 
+ * TODO: make documentation
+ *
+ */
 public class Address {
 	String street;
 	String city;

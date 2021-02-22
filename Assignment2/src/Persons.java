@@ -1,6 +1,12 @@
 import java.util.List;
 
-//Hello
+/**
+ * 
+ * @author Brennon Overbeek, Sam Hamacher
+ *
+ *
+ * TODO: make documentation
+ */
 public class Persons {
 
 		String personCode;
