@@ -20,6 +20,7 @@ public class Address {
 		this.zipcode = zipcode;
 		this.country = country;
 	}
+<<<<<<< HEAD
 
 	public String getStreet() {
 		return street;
@@ -60,4 +61,6 @@ public class Address {
 	public void setCountry(String country) {
 		this.country = country;
 	}
+=======
+>>>>>>> branch 'master' of https://github.com/Boverbeek/Assignment2.git
 }
