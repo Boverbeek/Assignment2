@@ -7,6 +7,8 @@ public class Persons {
 		String type;
 		String firstName;
 		String lastName;
-		Address address;
+		PersonAddress address;
 		List <String> emails;
-	}
+		
+		
+}
