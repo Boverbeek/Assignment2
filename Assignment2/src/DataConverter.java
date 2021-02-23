@@ -93,6 +93,7 @@ public class DataConverter {
 					String zip = parts[5];
 					String country = parts[6];
 					Address address = new Address(street, city, state, zip, country);
+					Stores store = new Stores(storeCode, managerCode, address);
 				}
 				n++;
 			}
