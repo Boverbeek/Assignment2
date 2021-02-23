@@ -57,25 +57,30 @@ public class DataConverter {
 				if (n != 0) {
 				String line = itemsFile.nextLine();
 				String parts[] = line.split(",");
-					if (parts[1] == "SV") {
+					if (parts[1].equals("SV")) {
 						String code = parts[0];
 						String SV = parts[1];
 						String name = parts[2];
 						double hourlyRate = Double.parseDouble(parts[3]);
 						Services services = new Services(code, SV, name, hourlyRate);
-					} else if (parts[1] == "SB") {
+					} 
+					if (parts[1].equals("SB")) {
 						String code = parts[0];
 						String SB = parts[1];
 						String name = parts[2];
 						double annualFee = Double.parseDouble(parts[3]);
 						Subscriptions subscription = new Subscriptions(code, SB, name, annualFee);
-					} else {
+					}
+					if (parts[1].equals("PN") || parts[1].equals("PU") || parts[1].equals("PG")) {
 						String code = parts[0];
 						String type = parts[1];
 						String name = parts[2];
 						double basePrice = Double.parseDouble(parts[3]);
 						Product product = new Product(code, type, name, basePrice);
+						
+						
 					}
+					Items items = new Items(product, subscription, services);
 				}
 				n++;
 			}
