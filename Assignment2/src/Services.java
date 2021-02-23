@@ -12,6 +12,22 @@ public class Services {
 		this.hourlyRate = hourlyRate;
 	}
 
+	public void setCode(String code) {
+		this.code = code;
+	}
+
+	public void setSV(String sV) {
+		SV = sV;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setHourlyRate(double hourlyRate) {
+		this.hourlyRate = hourlyRate;
+	}
+
 	public String getCode() {
 		return code;
 	}
