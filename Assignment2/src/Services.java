@@ -1,9 +1,9 @@
 
 public class Services {
-	String code;
-	String SV;
-	String name;
-	double hourlyRate;
+	private String code;
+	private String SV;
+	private String name;
+	private double hourlyRate;
 	
 	public Services (String code, String SV, String name, double hourlyRate) {
 		this.code = code;

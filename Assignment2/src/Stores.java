@@ -1,9 +1,9 @@
 
 public class Stores {
 
-	String storeCode;
-	String managerCode;
-	Address address;
+	private String storeCode;
+	private String managerCode;
+	private Address address;
 
 	public Stores (String storeCode, String managerCode, Address address) {
 		this.storeCode = storeCode;

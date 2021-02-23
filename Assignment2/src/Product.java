@@ -1,9 +1,9 @@
 
 public class Product {
-	String code;
-	String type;
-	String name;
-	double basePrice;
+	private String code;
+	private String type;
+	private String name;
+	private double basePrice;
 	
 	public Product (String code, String type, String name, double basePrice) {
 		this.code = code;

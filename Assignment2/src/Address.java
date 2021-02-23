@@ -6,11 +6,11 @@
  *
  */
 public class Address {
-	String street;
-	String city;
-	String state;
-	String zipcode;
-	String country;
+	private String street;
+	private String city;
+	private String state;
+	private String zipcode;
+	private String country;
 	
 	public Address (String street, String city, String state, String zipcode, String country) {
 		

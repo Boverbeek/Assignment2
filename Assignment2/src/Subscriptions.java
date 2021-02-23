@@ -1,9 +1,9 @@
 
 public class Subscriptions {
-	String code;
-	String SB;
-	String name;
-	double annualFee;
+	private String code;
+	private String SB;
+	private String name;
+	private double annualFee;
 
 	public Subscriptions (String code, String SB, String name, double annualFee) {
 		this.code = code;

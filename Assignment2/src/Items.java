@@ -1,8 +1,8 @@
 
 public class Items {
-	Product product;
-	Services services;
-	Subscriptions subscriptions;
+	private Product product;
+	private Services services;
+	private Subscriptions subscriptions;
 	
 	
 	public Items (Product product, Services services, Subscriptions subscriptions) {
