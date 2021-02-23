@@ -12,6 +12,22 @@ public class Product {
 		this.basePrice = basePrice;
 	}
 
+	public void setCode(String code) {
+		this.code = code;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setBasePrice(double basePrice) {
+		this.basePrice = basePrice;
+	}
+
 	public String getCode() {
 		return code;
 	}

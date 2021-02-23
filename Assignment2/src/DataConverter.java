@@ -57,26 +57,26 @@ public class DataConverter {
 				if (n != 0) {
 				String line = itemsFile.nextLine();
 				String parts[] = line.split(",");
+				Services services = new Services(null, null, null, 0.0);
+				Subscriptions subscription = new Subscriptions(null, null, null, 0.0);
+				Product product = new Product(null, null, null, 0.0);
 					if (parts[1].equals("SV")) {
-						String code = parts[0];
-						String SV = parts[1];
-						String name = parts[2];
-						double hourlyRate = Double.parseDouble(parts[3]);
-						Services services = new Services(code, SV, name, hourlyRate);
+						services.setCode(parts[0]);
+						services.setSV(parts[1]);
+						services.setName(parts[2]);
+						services.setHourlyRate(Double.parseDouble(parts[3]));
 					} 
 					if (parts[1].equals("SB")) {
-						String code = parts[0];
-						String SB = parts[1];
-						String name = parts[2];
-						double annualFee = Double.parseDouble(parts[3]);
-						Subscriptions subscription = new Subscriptions(code, SB, name, annualFee);
+						subscription.setCode(parts[0]);
+						subscription.setSB(parts[1]);
+						subscription.setName(parts[2]);
+						subscription.setAnnualFee(Double.parseDouble(parts[3]));
 					}
 					if (parts[1].equals("PN") || parts[1].equals("PU") || parts[1].equals("PG")) {
-						String code = parts[0];
-						String type = parts[1];
-						String name = parts[2];
-						double basePrice = Double.parseDouble(parts[3]);
-						Product product = new Product(code, type, name, basePrice);
+						product.setCode(parts[0]);
+						product.setType(parts[1]);
+						product.setName(parts[2]);
+						product.setBasePrice(Double.parseDouble(parts[3]));
 					}
 					Items items = new Items(product, services, subscription);
 				}
@@ -96,6 +96,7 @@ public class DataConverter {
 					String zip = parts[5];
 					String country = parts[6];
 					Address address = new Address(street, city, state, zip, country);
+					Stores store = new Stores(storeCode, managerCode, address);
 				}
 				n++;
 			}

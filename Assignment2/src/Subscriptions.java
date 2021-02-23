@@ -12,6 +12,22 @@ public class Subscriptions {
 		this.annualFee = annualFee;
 	}
 
+	public void setCode(String code) {
+		this.code = code;
+	}
+
+	public void setSB(String sB) {
+		SB = sB;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setAnnualFee(double annualFee) {
+		this.annualFee = annualFee;
+	}
+
 	public String getCode() {
 		return code;
 	}
