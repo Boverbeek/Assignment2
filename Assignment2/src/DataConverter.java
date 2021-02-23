@@ -1,6 +1,7 @@
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -25,10 +26,27 @@ public class DataConverter {
 		try {
 			
 			Scanner personsFile = new Scanner(new File(Persons_File));
+			int n = 0;
 			while (personsFile.hasNextLine()) {
-				String line = personsFile.nextLine();
-				String parts[] = line.split(",");
-				
+				if (n != 0) {
+					String line = personsFile.nextLine();
+					String parts[] = line.split(",");
+					String personCode = parts[0];
+					String type = parts[1];
+					String lastName = parts[2];
+					String firstName = parts[3];
+					String street = parts[4];
+					String city = parts[5];
+					String state = parts[6];
+					String zip = parts[7];
+					String country = parts[8];
+					List <String> emails; 
+					emails.add(parts[9]);
+					Address address = new Address(street, city, state, zip, country);
+					Persons person = new Persons(personCode, type, lastName, firstName, address, emails);
+					
+				}
+				n++;
 			}
 			
 			Scanner itemsFile = new Scanner(new File(Items_File));
