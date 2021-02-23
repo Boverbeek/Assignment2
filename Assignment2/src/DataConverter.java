@@ -48,19 +48,50 @@ public class DataConverter {
 				}
 				n++;
 			}
-			
+			n = 0;
 			Scanner itemsFile = new Scanner(new File(Items_File));
 			while (itemsFile.hasNextLine()) {
+				if (n != 0) {
 				String line = itemsFile.nextLine();
 				String parts[] = line.split(",");
-				
+					if (parts[1] == "SV") {
+						String code = parts[0];
+						String SV = parts[1];
+						String name = parts[2];
+						double hourlyRate = Double.parseDouble(parts[3]);
+						Services services = new Services(code, SV, name, hourlyRate);
+					} else if (parts[1] == "SB") {
+						String code = parts[0];
+						String SB = parts[1];
+						String name = parts[2];
+						double annualFee = Double.parseDouble(parts[3]);
+						Subscriptions subscription = new Subscriptions(code, SB, name, annualFee);
+					} else {
+						String code = parts[0];
+						String type = parts[1];
+						String name = parts[2];
+						double basePrice = Double.parseDouble(parts[3]);
+						Product product = new Product(code, type, name, basePrice);
+					}
+				}
+				n++;
 			}
-			
+			n = 0;
 			Scanner storesFile = new Scanner(new File(Stores_File));
 			while (storesFile.hasNextLine()) {
-				String line = storesFile.nextLine();
-				String parts[] = line.split(",");
-				
+				if (n != 0) {
+					String line = storesFile.nextLine();
+					String parts[] = line.split(",");
+					String storeCode = parts[0];
+					String managerCode = parts[1];
+					String street = parts[2];
+					String city = parts[3];
+					String state = parts[4];
+					String zip = parts[5];
+					String country = parts[6];
+					Address address = new Address(street, city, state, zip, country);
+				}
+				n++;
 			}
 			
 			Scanner salesFile = new Scanner(new File(Sales_File));
