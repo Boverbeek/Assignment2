@@ -77,10 +77,8 @@ public class DataConverter {
 						String name = parts[2];
 						double basePrice = Double.parseDouble(parts[3]);
 						Product product = new Product(code, type, name, basePrice);
-						
-						
 					}
-					Items items = new Items(product, subscription, services);
+					Items items = new Items(product, services, subscription);
 				}
 				n++;
 			}
