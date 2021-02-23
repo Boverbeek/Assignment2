@@ -19,8 +19,6 @@ public class DataConverter {
 	private static final String Items_File = "data/Items.csv";
 	
 	private static final String Stores_File = "data/Stores.csv";
-	
-	private static final String Sales_File = "data/Sales.csv";
 
 	public static void main(String[] args) {
 		
@@ -47,7 +45,6 @@ public class DataConverter {
 					}
 					Address address = new Address(street, city, state, zip, country);
 					Persons person = new Persons(personCode, type, lastName, firstName, address, emails);
-					
 				}
 				n++;
 			}
@@ -99,11 +96,6 @@ public class DataConverter {
 					Stores store = new Stores(storeCode, managerCode, address);
 				}
 				n++;
-			}
-			
-			Scanner salesFile = new Scanner(new File(Sales_File));
-			while (salesFile.hasNextLine()) {
-				
 			}
 			
 		} catch (FileNotFoundException e) {
