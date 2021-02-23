@@ -10,4 +10,20 @@ public class Items {
 		this.services = services;
 		this.subscriptions = subscriptions;
 	}
+
+
+	public Product getProduct() {
+		return product;
+	}
+
+
+	public Services getServices() {
+		return services;
+	}
+
+
+	public Subscriptions getSubscriptions() {
+		return subscriptions;
+	}
+	
 }

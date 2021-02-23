@@ -11,4 +11,21 @@ public class Product {
 		this.name = name;
 		this.basePrice = basePrice;
 	}
+
+	public String getCode() {
+		return code;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public double getBasePrice() {
+		return basePrice;
+	}
+	
 }
