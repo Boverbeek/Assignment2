@@ -26,16 +26,22 @@ public class DataConverter {
 			
 			Scanner personsFile = new Scanner(new File(Persons_File));
 			while (personsFile.hasNextLine()) {
+				String line = personsFile.nextLine();
+				String parts[] = line.split(",");
 				
 			}
 			
 			Scanner itemsFile = new Scanner(new File(Items_File));
 			while (itemsFile.hasNextLine()) {
+				String line = itemsFile.nextLine();
+				String parts[] = line.split(",");
 				
 			}
 			
 			Scanner storesFile = new Scanner(new File(Stores_File));
 			while (storesFile.hasNextLine()) {
+				String line = storesFile.nextLine();
+				String parts[] = line.split(",");
 				
 			}
 			
