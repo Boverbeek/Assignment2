@@ -1,6 +1,7 @@
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -40,8 +41,10 @@ public class DataConverter {
 					String state = parts[6];
 					String zip = parts[7];
 					String country = parts[8];
-					List <String> emails; 
-					emails.add(parts[9]);
+					List <String> emails = new ArrayList<>();
+					for (int i = 9; i < parts.length; i++) {
+						emails.add(parts[i]);
+					}
 					Address address = new Address(street, city, state, zip, country);
 					Persons person = new Persons(personCode, type, lastName, firstName, address, emails);
 					
