@@ -1,9 +1,14 @@
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.xml.DomDriver;
+
 
 /**
  * 
@@ -19,17 +24,20 @@ public class DataConverter {
 	private static final String Items_File = "data/Items.csv";
 	
 	private static final String Stores_File = "data/Stores.csv";
+	
+	static XStream xstream = new XStream(new DomDriver());
 
 	public static void main(String[] args) {
 		
 		try {
 			
 			Scanner personsFile = new Scanner(new File(Persons_File));
-			int n = 0;
+			File personOutput = new File ("data/Persons.xml");
+			PrintWriter personWrite = new PrintWriter(personOutput);
 			while (personsFile.hasNextLine()) {
-				if (n != 0) {
-					String line = personsFile.nextLine();
-					String parts[] = line.split(",");
+				String line = personsFile.nextLine();
+				String parts[] = line.split(",");
+				if (parts.length != 1) {
 					String personCode = parts[0];
 					String type = parts[1];
 					String lastName = parts[2];
@@ -45,15 +53,17 @@ public class DataConverter {
 					}
 					Address address = new Address(street, city, state, zip, country);
 					Persons person = new Persons(personCode, type, lastName, firstName, address, emails);
+					String xml = xstream.toXML(person);
+					personWrite.println(xml);
 				}
-				n++;
 			}
-			n = 0;
+			personWrite.close();
+			personsFile.close();
 			Scanner itemsFile = new Scanner(new File(Items_File));
 			while (itemsFile.hasNextLine()) {
-				if (n != 0) {
 				String line = itemsFile.nextLine();
 				String parts[] = line.split(",");
+				if (parts.length != 1) {
 				Services services = new Services(null, null, null, 0.0);
 				Subscriptions subscription = new Subscriptions(null, null, null, 0.0);
 				Product product = new Product(null, null, null, 0.0);
@@ -76,15 +86,16 @@ public class DataConverter {
 						product.setBasePrice(Double.parseDouble(parts[3]));
 					}
 					Items items = new Items(product, services, subscription);
-				}
-				n++;
+				}	
 			}
-			n = 0;
+			itemsFile.close();
 			Scanner storesFile = new Scanner(new File(Stores_File));
+			File storeOutput = new File ("data/Stores.xml");
+			PrintWriter storeWrite = new PrintWriter(storeOutput);
 			while (storesFile.hasNextLine()) {
-				if (n != 0) {
-					String line = storesFile.nextLine();
-					String parts[] = line.split(",");
+				String line = storesFile.nextLine();
+				String parts[] = line.split(",");
+				if (parts.length != 1) {
 					String storeCode = parts[0];
 					String managerCode = parts[1];
 					String street = parts[2];
@@ -93,12 +104,14 @@ public class DataConverter {
 					String zip = parts[5];
 					String country = parts[6];
 					Address address = new Address(street, city, state, zip, country);
-					Stores store = new Stores(storeCode, managerCode, address);
+					Stores store = new Stores(storeCode, managerCode, address);	
+					String xml = xstream.toXML(store);
+					storeWrite.println(xml);
 				}
-				n++;
 			}
-			
-		} catch (FileNotFoundException e) {
+			storeWrite.close();
+			storesFile.close();
+			} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
 	}
