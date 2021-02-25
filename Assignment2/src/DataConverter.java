@@ -22,6 +22,7 @@ public class DataConverter {
 
 	public static void main(String[] args) {
 		
+		
 		try {
 			
 			Scanner personsFile = new Scanner(new File(Persons_File));
@@ -52,11 +53,11 @@ public class DataConverter {
 			Scanner itemsFile = new Scanner(new File(Items_File));
 			while (itemsFile.hasNextLine()) {
 				if (n != 0) {
-				String line = itemsFile.nextLine();
-				String parts[] = line.split(",");
-				Services services = new Services(null, null, null, 0.0);
-				Subscriptions subscription = new Subscriptions(null, null, null, 0.0);
-				Product product = new Product(null, null, null, 0.0);
+					String line = itemsFile.nextLine();
+					String parts[] = line.split(",");
+					Services services = new Services(null, null, null, 0.0);
+					Subscriptions subscription = new Subscriptions(null, null, null, 0.0);
+					Product product = new Product(null, null, null, 0.0);
 					if (parts[1].equals("SV")) {
 						services.setCode(parts[0]);
 						services.setSV(parts[1]);
