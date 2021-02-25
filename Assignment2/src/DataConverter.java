@@ -60,6 +60,8 @@ public class DataConverter {
 			personWrite.close();
 			personsFile.close();
 			Scanner itemsFile = new Scanner(new File(Items_File));
+			File itemsOutput = new File ("data/items.xml");
+			PrintWriter itemWrite = new PrintWriter(itemsOutput);
 			while (itemsFile.hasNextLine()) {
 				String line = itemsFile.nextLine();
 				String parts[] = line.split(",");
@@ -79,15 +81,22 @@ public class DataConverter {
 						subscription.setName(parts[2]);
 						subscription.setAnnualFee(Double.parseDouble(parts[3]));
 					}
-					if (parts[1].equals("PN") || parts[1].equals("PU") || parts[1].equals("PG")) {
+					if (parts[1].equals("PN") || parts[1].equals("PU")){
 						product.setCode(parts[0]);
 						product.setType(parts[1]);
 						product.setName(parts[2]);
 						product.setBasePrice(Double.parseDouble(parts[3]));
+					} else if (parts[1].equals("PG")) {
+						product.setCode(parts[0]);
+						product.setType(parts[1]);
+						product.setName(parts[2]);
 					}
 					Items items = new Items(product, services, subscription);
+					String xml = xstream.toXML(items);
+					itemWrite.println(xml);
 				}	
 			}
+			itemWrite.close();
 			itemsFile.close();
 			Scanner storesFile = new Scanner(new File(Stores_File));
 			File storeOutput = new File ("data/Stores.xml");
