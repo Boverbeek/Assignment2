@@ -1,9 +1,9 @@
-<Items>
+<com.mgg.Items>
   <product>
-    <code>1d4d89</code>
+    <code>dmxuyf</code>
     <type>PN</type>
-    <name>PlayStation 5 Digital Edition</name>
-    <basePrice>399.99</basePrice>
+    <name>Doritos (14oz)</name>
+    <basePrice>4.99</basePrice>
   </product>
   <services>
     <hourlyRate>0.0</hourlyRate>
@@ -11,26 +11,12 @@
   <subscriptions>
     <annualFee>0.0</annualFee>
   </subscriptions>
-</Items>
-<Items>
+</com.mgg.Items>
+<com.mgg.Items>
   <product>
-    <code>1ed5b7</code>
+    <code>u8ldge</code>
     <type>PN</type>
-    <name>Nintendo Switch Lite</name>
-    <basePrice>199.99</basePrice>
-  </product>
-  <services>
-    <hourlyRate>0.0</hourlyRate>
-  </services>
-  <subscriptions>
-    <annualFee>0.0</annualFee>
-  </subscriptions>
-</Items>
-<Items>
-  <product>
-    <code>6ce4cd</code>
-    <type>PN</type>
-    <name>Splatoon 2 (Digital Copy)</name>
+    <name>Call Of Duty Ghosts (Ps4 edition)</name>
     <basePrice>59.99</basePrice>
   </product>
   <services>
@@ -39,13 +25,13 @@
   <subscriptions>
     <annualFee>0.0</annualFee>
   </subscriptions>
-</Items>
-<Items>
+</com.mgg.Items>
+<com.mgg.Items>
   <product>
-    <code>c547e7</code>
+    <code>2bmel9</code>
     <type>PN</type>
-    <name>Diet Mt Dew (20oz)</name>
-    <basePrice>1.99</basePrice>
+    <name>Iphone X 256GB</name>
+    <basePrice>679.0</basePrice>
   </product>
   <services>
     <hourlyRate>0.0</hourlyRate>
@@ -53,13 +39,13 @@
   <subscriptions>
     <annualFee>0.0</annualFee>
   </subscriptions>
-</Items>
-<Items>
+</com.mgg.Items>
+<com.mgg.Items>
   <product>
-    <code>5f73aa</code>
-    <type>PG</type>
-    <name>Nintendo Digital Gold</name>
-    <basePrice>0.0</basePrice>
+    <code>nnb105</code>
+    <type>PN</type>
+    <name>AOC 24” computer monitor</name>
+    <basePrice>158.99</basePrice>
   </product>
   <services>
     <hourlyRate>0.0</hourlyRate>
@@ -67,55 +53,13 @@
   <subscriptions>
     <annualFee>0.0</annualFee>
   </subscriptions>
-</Items>
-<Items>
+</com.mgg.Items>
+<com.mgg.Items>
   <product>
-    <code>14e2b7</code>
-    <type>PG</type>
-    <name>Steam</name>
-    <basePrice>0.0</basePrice>
-  </product>
-  <services>
-    <hourlyRate>0.0</hourlyRate>
-  </services>
-  <subscriptions>
-    <annualFee>0.0</annualFee>
-  </subscriptions>
-</Items>
-<Items>
-  <product>
-    <code>8a30ad</code>
-    <type>PG</type>
-    <name>Android Store</name>
-    <basePrice>0.0</basePrice>
-  </product>
-  <services>
-    <hourlyRate>0.0</hourlyRate>
-  </services>
-  <subscriptions>
-    <annualFee>0.0</annualFee>
-  </subscriptions>
-</Items>
-<Items>
-  <product>
-    <code>daad6a</code>
-    <type>PG</type>
-    <name>Robux</name>
-    <basePrice>0.0</basePrice>
-  </product>
-  <services>
-    <hourlyRate>0.0</hourlyRate>
-  </services>
-  <subscriptions>
-    <annualFee>0.0</annualFee>
-  </subscriptions>
-</Items>
-<Items>
-  <product>
-    <code>649f88</code>
+    <code>2l5dtb</code>
     <type>PU</type>
-    <name>Legend of Zelda (NES)</name>
-    <basePrice>24.5</basePrice>
+    <name>Ark Survival Evolved (Xbox 1 edition)</name>
+    <basePrice>28.0</basePrice>
   </product>
   <services>
     <hourlyRate>0.0</hourlyRate>
@@ -123,130 +67,4 @@
   <subscriptions>
     <annualFee>0.0</annualFee>
   </subscriptions>
-</Items>
-<Items>
-  <product>
-    <code>0ec6e9</code>
-    <type>PU</type>
-    <name>Animal Crossings</name>
-    <basePrice>59.99</basePrice>
-  </product>
-  <services>
-    <hourlyRate>0.0</hourlyRate>
-  </services>
-  <subscriptions>
-    <annualFee>0.0</annualFee>
-  </subscriptions>
-</Items>
-<Items>
-  <product>
-    <code>9b6e30</code>
-    <type>PU</type>
-    <name>Oculus Rift</name>
-    <basePrice>199.99</basePrice>
-  </product>
-  <services>
-    <hourlyRate>0.0</hourlyRate>
-  </services>
-  <subscriptions>
-    <annualFee>0.0</annualFee>
-  </subscriptions>
-</Items>
-<Items>
-  <product>
-    <code>40a433</code>
-    <type>PU</type>
-    <name>Vive</name>
-    <basePrice>599.99</basePrice>
-  </product>
-  <services>
-    <hourlyRate>0.0</hourlyRate>
-  </services>
-  <subscriptions>
-    <annualFee>0.0</annualFee>
-  </subscriptions>
-</Items>
-<Items>
-  <product>
-    <basePrice>0.0</basePrice>
-  </product>
-  <services>
-    <code>8e366e</code>
-    <SV>SV</SV>
-    <name>Console Repair</name>
-    <hourlyRate>59.99</hourlyRate>
-  </services>
-  <subscriptions>
-    <annualFee>0.0</annualFee>
-  </subscriptions>
-</Items>
-<Items>
-  <product>
-    <basePrice>0.0</basePrice>
-  </product>
-  <services>
-    <code>c4fb35</code>
-    <SV>SV</SV>
-    <name>VR Party Rental</name>
-    <hourlyRate>120.0</hourlyRate>
-  </services>
-  <subscriptions>
-    <annualFee>0.0</annualFee>
-  </subscriptions>
-</Items>
-<Items>
-  <product>
-    <basePrice>0.0</basePrice>
-  </product>
-  <services>
-    <code>740515</code>
-    <SV>SV</SV>
-    <name>Game Addiction Counseling</name>
-    <hourlyRate>1.99</hourlyRate>
-  </services>
-  <subscriptions>
-    <annualFee>0.0</annualFee>
-  </subscriptions>
-</Items>
-<Items>
-  <product>
-    <basePrice>0.0</basePrice>
-  </product>
-  <services>
-    <hourlyRate>0.0</hourlyRate>
-  </services>
-  <subscriptions>
-    <code>426dda</code>
-    <SB>SB</SB>
-    <name>X-Box Live</name>
-    <annualFee>50.0</annualFee>
-  </subscriptions>
-</Items>
-<Items>
-  <product>
-    <basePrice>0.0</basePrice>
-  </product>
-  <services>
-    <hourlyRate>0.0</hourlyRate>
-  </services>
-  <subscriptions>
-    <code>dedd44</code>
-    <SB>SB</SB>
-    <name>Nintendo Power magazine</name>
-    <annualFee>120.0</annualFee>
-  </subscriptions>
-</Items>
-<Items>
-  <product>
-    <basePrice>0.0</basePrice>
-  </product>
-  <services>
-    <hourlyRate>0.0</hourlyRate>
-  </services>
-  <subscriptions>
-    <code>3506f6</code>
-    <SB>SB</SB>
-    <name>Disney Plus</name>
-    <annualFee>89.99</annualFee>
-  </subscriptions>
-</Items>
+</com.mgg.Items>

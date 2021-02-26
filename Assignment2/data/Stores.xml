@@ -1,4 +1,4 @@
-<Stores>
+<com.mgg.Stores>
   <storeCode>6kfz20</storeCode>
   <managerCode>p44eh7</managerCode>
   <address>
@@ -8,8 +8,8 @@
     <zipcode>32225</zipcode>
     <country>US</country>
   </address>
-</Stores>
-<Stores>
+</com.mgg.Stores>
+<com.mgg.Stores>
   <storeCode>j17zt5</storeCode>
   <managerCode>p44eh7</managerCode>
   <address>
@@ -19,8 +19,8 @@
     <zipcode>25716</zipcode>
     <country>US</country>
   </address>
-</Stores>
-<Stores>
+</com.mgg.Stores>
+<com.mgg.Stores>
   <storeCode>5uim79</storeCode>
   <managerCode>w34jg2</managerCode>
   <address>
@@ -30,8 +30,8 @@
     <zipcode>97286</zipcode>
     <country>US</country>
   </address>
-</Stores>
-<Stores>
+</com.mgg.Stores>
+<com.mgg.Stores>
   <storeCode>y22lq6</storeCode>
   <managerCode>w34jg2</managerCode>
   <address>
@@ -41,10 +41,10 @@
     <zipcode>53220</zipcode>
     <country>US</country>
   </address>
-</Stores>
-<Stores>
+</com.mgg.Stores>
+<com.mgg.Stores>
   <storeCode>0wtw56</storeCode>
-  <managerCode>3ogc73</managerCode>
+  <managerCode>p44eh7</managerCode>
   <address>
     <street>435 Banding Trail</street>
     <city>Lubbock</city>
@@ -52,4 +52,4 @@
     <zipcode>79491</zipcode>
     <country>US</country>
   </address>
-</Stores>
+</com.mgg.Stores>

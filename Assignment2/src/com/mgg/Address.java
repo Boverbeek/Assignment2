@@ -1,11 +1,5 @@
 package com.mgg;
-/**
- * 
- * @author Brennon Overbeek, Sam Hamacher
- * 
- * TODO: make documentation
- *
- */
+
 public class Address {
 	private String street;
 	private String city;

@@ -1,13 +1,6 @@
 import java.util.List;
 
-/**
- * 
- * @author Brennon Overbeek, Sam Hamacher
- *
- *
- * TODO: make documentation
- */
-public class Persons {
+ class Persons {
 
 		private String personCode;
 		private String type;

@@ -1,4 +1,4 @@
-<Persons>
+<com.mgg.Persons>
   <personCode>p44eh7</personCode>
   <type>E</type>
   <firstName>Bruckent</firstName>
@@ -13,8 +13,8 @@
   <emails>
     <string>cbruckent0@mapy.cz</string>
   </emails>
-</Persons>
-<Persons>
+</com.mgg.Persons>
+<com.mgg.Persons>
   <personCode>4oxt16</personCode>
   <type>P</type>
   <firstName>Readwing</firstName>
@@ -29,10 +29,10 @@
   <emails>
     <string>mreadwing1@bandcamp.com</string>
   </emails>
-</Persons>
-<Persons>
-  <personCode>2ryy76</personCode>
-  <type>P</type>
+</com.mgg.Persons>
+<com.mgg.Persons>
+  <personCode>w34jg2</personCode>
+  <type>E</type>
   <firstName>Folger</firstName>
   <lastName>Julissa</lastName>
   <address>
@@ -45,8 +45,8 @@
   <emails>
     <string>jfolger2@skyrock.com</string>
   </emails>
-</Persons>
-<Persons>
+</com.mgg.Persons>
+<com.mgg.Persons>
   <personCode>x98vv6</personCode>
   <type>G</type>
   <firstName>Dary</firstName>
@@ -61,8 +61,8 @@
   <emails>
     <string>cdary3@tmall.com</string>
   </emails>
-</Persons>
-<Persons>
+</com.mgg.Persons>
+<com.mgg.Persons>
   <personCode>5nhb03</personCode>
   <type>C</type>
   <firstName>Stritton</firstName>
@@ -76,65 +76,6 @@
   </address>
   <emails>
     <string>mstritton4@huffingtonpost.com</string>
+    <string>mstritton4@huffingtonpost.com</string>
   </emails>
-</Persons>
-<Persons>
-  <personCode>t25vx1</personCode>
-  <type>C</type>
-  <firstName>Cancellieri</firstName>
-  <lastName>Odelia</lastName>
-  <address>
-    <street>198 Stone Corner Point</street>
-    <city>Tatuí</city>
-    <state>TX</state>
-    <zipcode>392921</zipcode>
-    <country>US.ocancellieri5@smh.com.au</country>
-  </address>
-  <emails/>
-</Persons>
-<Persons>
-  <personCode>w34jg2</personCode>
-  <type>E</type>
-  <firstName>Tinto</firstName>
-  <lastName>Averyl</lastName>
-  <address>
-    <street>98624 Pearson Junction</street>
-    <city>Qalqaman</city>
-    <state>PA</state>
-    <zipcode>27172</zipcode>
-    <country>US</country>
-  </address>
-  <emails>
-    <string>atinto6@yelp.com</string>
-  </emails>
-</Persons>
-<Persons>
-  <personCode>3ogc73</personCode>
-  <type>E</type>
-  <firstName>Joutapaitis</firstName>
-  <lastName>Gawain</lastName>
-  <address>
-    <street>3578 Stoughton Park</street>
-    <city>Opi</city>
-    <state>WA</state>
-    <zipcode>201012</zipcode>
-    <country>US</country>
-  </address>
-  <emails>
-    <string>gjoutapaitis7@loc.gov</string>
-  </emails>
-</Persons>
-<Persons>
-  <personCode>w40ra7</personCode>
-  <type>P</type>
-  <firstName>Semor</firstName>
-  <lastName>Adriaens</lastName>
-  <address>
-    <street>36321 Thackeray Road</street>
-    <city>Vilarinho da Castanheira</city>
-    <state>OR</state>
-    <zipcode>47123</zipcode>
-    <country>US</country>
-  </address>
-  <emails/>
-</Persons>
+</com.mgg.Persons>
