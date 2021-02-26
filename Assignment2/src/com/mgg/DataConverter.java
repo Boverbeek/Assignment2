@@ -14,7 +14,8 @@ import com.thoughtworks.xstream.io.xml.DomDriver;
  * 
  * @author Brennon Overbeek, Sam Hamacher
  * 
- * TODO:
+ * takes in a person file, items file, and stores
+ * and returns those files in xml format
  *
  */
 
@@ -31,7 +32,9 @@ public class DataConverter {
 	public static void main(String[] args) {
 		
 		try {
-
+			
+			//reads through persons file and constructs it and puts it into a list
+			List<String> personsList = new ArrayList<>();
 			Scanner personsFile = new Scanner(new File(Persons_File));
 			File personOutput = new File ("data/Persons.xml");
 			PrintWriter personWrite = new PrintWriter(personOutput);
@@ -54,12 +57,17 @@ public class DataConverter {
 					}
 					Address address = new Address(street, city, state, zip, country);
 					Persons person = new Persons(personCode, type, lastName, firstName, address, emails);
-					String xml = xstream.toXML(person);
-					personWrite.println(xml);
+					personsList.add(person.toString());
 				}
 			}
+			//converts list to xml
+			String personsXml = xstream.toXML(personsList);
+			personWrite.println(personsXml);
 			personWrite.close();
 			personsFile.close();
+			
+			//reads through items file and constructs it and puts it into a list
+			List<String> itemsList = new ArrayList<>();
 			Scanner itemsFile = new Scanner(new File(Items_File));
 			File itemsOutput = new File ("data/items.xml");
 			PrintWriter itemWrite = new PrintWriter(itemsOutput);
@@ -93,12 +101,18 @@ public class DataConverter {
 						product.setName(parts[2]);
 					}
 					Items items = new Items(product, services, subscription);
-					String xml = xstream.toXML(items);
-					itemWrite.println(xml);
+					itemsList.add(items.toString());
+
 				}	
 			}
+			//converts list to xml
+			String itemsXml = xstream.toXML(itemsList);
+			itemWrite.println(itemsXml);
 			itemWrite.close();
 			itemsFile.close();
+			
+			//reads through stores file and constructs it and puts it into a list
+			List<String> storesList = new ArrayList<>();
 			Scanner storesFile = new Scanner(new File(Stores_File));
 			File storeOutput = new File ("data/Stores.xml");
 			PrintWriter storeWrite = new PrintWriter(storeOutput);
@@ -114,14 +128,18 @@ public class DataConverter {
 					String zip = parts[5];
 					String country = parts[6];
 					Address address = new Address(street, city, state, zip, country);
-					Stores store = new Stores(storeCode, managerCode, address);	
+					Stores store = new Stores(storeCode, managerCode, address);
+					storesList.add(store.toString());
 					String xml = xstream.toXML(store);
 					storeWrite.println(xml);
 				}
 			}
-
+			//converts list to xml
+			String storesXml = xstream.toXML(storesList);
+			storeWrite.println(storesXml);
 			storeWrite.close();
 			storesFile.close();
+			
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
