@@ -13,7 +13,7 @@ import com.thoughtworks.xstream.io.xml.DomDriver;
  * 
  * @author Brennon Overbeek, Sam Hamacher
  * 
- * TODO: make documentation
+ * TODO:
  *
  */
 
