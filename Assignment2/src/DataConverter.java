@@ -79,11 +79,15 @@ public class DataConverter {
 						subscription.setName(parts[2]);
 						subscription.setAnnualFee(Double.parseDouble(parts[3]));
 					}
-					if (parts[1].equals("PN") || parts[1].equals("PU") || parts[1].equals("PG")) {
+					if (parts[1].equals("PN") || parts[1].equals("PU")) {
 						product.setCode(parts[0]);
 						product.setType(parts[1]);
 						product.setName(parts[2]);
 						product.setBasePrice(Double.parseDouble(parts[3]));
+					} else if (parts[1].equals("PG")) {
+						product.setCode(parts[0]);
+						product.setType(parts[1]);
+						product.setName(parts[2]);
 					}
 					Items items = new Items(product, services, subscription);
 				}	
